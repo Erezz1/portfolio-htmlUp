@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.projects-container {
+		@apply
+		mx-5
+		pt-10
+		pb-3
+		border-t
+		border-gray
+
+		md:grid
+		md:grid-cols-12
+		md:gap-6
+		md:m-0
+		md:pb-10
+
+		xl:inline-block
+		xl:border-none
+		xl:w-1/4
+		xl:float-left
+	}
+
+	.project {
+		@apply
+		bg-white
+		w-full
+		mb-7
+		border
+		border-gray
+
+		md:col-span-6
+		md:mb-3
+
+		xl:mb-10
+	}
+
+	.project-image {
+		@apply
+		w-full
+		cursor-pointer
+	}
+
+	.project-body {
+		@apply
+		flex
+		items-center
+		justify-between
+		p-4
+	}
+
+	.project-title {
+		@apply
+		font-bold
+		uppercase
+		font-raleway
+		text-xs
+		tracking-widest
+		text-dark
+		leading-7
+		cursor-pointer
+		transition-colors
+		duration-300
+
+		hover:text-primary
+
+		2xl:text-sm
+	}
+
+	.project-date {
+		@apply
+		font-normal
+		uppercase
+		font-raleway
+		text-xs
+		tracking-widest
+		text-muted
+	}
+
+	.project-author {
+		@apply
+		w-10
+		rounded-full
+		cursor-pointer
+	}
+}
