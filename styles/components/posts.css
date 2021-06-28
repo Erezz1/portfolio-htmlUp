@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.posts-container {
+		@apply
+		w-full 
+		mb-10
+
+		md:mb-16
+		xl:w-3/4 
+		xl:float-right 
+		xl:mt-10
+		xl:mb-32
+		xl:pl-10
+	}
+
+	.post-buttons {
+		@apply
+		flex 
+		px-5 
+		flex-col 
+
+		md:px-0 
+		md:flex-row 
+		md:ml-10 
+		xl:ml-0
+	}
+
+	.post {
+		@apply
+		bg-white 
+		w-full 
+		border-gray
+		border
+		mb-10 
+
+		xl:mb-14
+	}
+
+	.post-header {
+		@apply
+		py-10 
+		px-5 
+		flex 
+		items-center 
+		flex-col 
+		md:py-16 
+
+		lg:flex-row 
+		lg:py-0 
+		lg:justify-between
+	}
+
+	.post-head {
+		@apply
+		border-gray 
+
+		lg:w-3/4 
+		lg:px-4 
+		lg:border-r 
+		lg:h-full 
+		lg:py-14
+	}
+
+	.post-title {
+		@apply
+		text-lg
+		uppercase
+		font-raleway
+		font-bold
+		text-dark
+		tracking-widest
+		text-center
+		cursor-pointer
+		transition-colors
+		duration-300
+
+		hover:text-primary
+
+		lg:text-2xl
+		lg:text-left
+	}
+
+	.post-subtitle {
+		@apply
+		mt-2
+		text-xs
+		uppercase
+		font-raleway
+		font-light
+		text-dark
+		tracking-widest
+		text-center
+		leading-6
+
+		lg:text-left
+	}
+
+	.post-author-container {
+		@apply
+		flex
+		flex-col
+		items-center
+		justify-center
+		mt-7
+
+		md:flex-row
+		md:mt-10
+
+		lg:flex-col
+		lg:mt-0
+		lg:w-1/4
+		lg:items-end
+		lg:px-4
+	}
+
+	.post-date {
+		@apply
+		text-xs
+		uppercase
+		font-raleway
+		font-bold
+		text-dark
+		tracking-widest
+		text-center
+		mb-3
+
+		md:mb-0
+		md:px-3
+		md:border-r
+		md:border-gray
+		lg:px-0
+		lg:border-none
+	}
+
+	.post-author {
+		@apply
+		items-center
+		md:flex
+
+		lg:flex-row-reverse
+		lg:mt-3
+	}
+
+	.post-author-image {
+		@apply
+		w-8
+		rounded-full
+
+		md:mx-3
+		lg:mr-0
+	}
+
+	.post-author-name {
+		@apply
+		hidden
+		text-xs
+		uppercase
+		font-raleway
+		font-light
+		text-dark
+		tracking-widest
+		text-center
+		cursor-pointer
+		transition-colors
+		duration-300
+
+		hover:text-primary
+
+		md:inline
+	}
+
+	.post-image {
+		@apply
+		w-full
+		px-0
+		pt-0
+		border-t
+		border-gray
+
+		md:px-10
+		md:pt-10
+	}
+
+	.post-body {
+		@apply
+		px-6
+		py-7
+
+		md:px-10
+	}
+
+	.post-text {
+		@apply
+		text-dark
+		font-raleway
+		text-base
+		leading-6
+	}
+
+	.post-footer {
+		@apply
+		flex
+		flex-col
+
+		md:flex-row-reverse
+		md:justify-between
+		md:mt-7
+		md:mb-3
+	}
+
+	.post-reactions {
+		@apply
+		flex
+		justify-center
+		mb-5 
+		mt-8
+		text-xs
+		text-muted
+	}
+
+	.post-reaction-general {
+		@apply
+		uppercase 
+		font-raleway 
+		tracking-wider 
+		px-3
+		cursor-pointer
+		transition-colors
+		duration-300
+
+		hover:text-primary
+	}
+
+	.post-reaction-button {
+		@apply
+		flex 
+		items-center 
+		px-3 
+		border-l 
+		border-gray
+		cursor-pointer
+		transition-colors
+		duration-300
+
+		hover:text-primary
+	}
+
+	.post-button {
+		@apply
+		text-center
+		uppercase
+		text-xs
+		font-raleway
+		tracking-widest
+		font-bold
+		text-dark
+		block
+		border
+		border-gray
+		p-4
+		mt-2
+		cursor-pointer
+		transition-colors
+		duration-300
+
+		hover:text-primary
+		hover:border-primary
+
+		md:px-10
+	}
+}

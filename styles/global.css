@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url(./layout/header.css);
+@import url(./components/title.css);
+@import url(./components/posts.css);
+
+body {
+	background-color: #F4F4F4;
+}

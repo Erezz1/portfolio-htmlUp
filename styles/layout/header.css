@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.header {
+		@apply
+		w-full
+		border-b
+		border-gray
+		flex
+		justify-between
+		sticky
+		top-0
+		bg-white
+	}
+
+	.header-logo {
+		@apply
+		font-raleway
+		font-bold
+		tracking-widest
+		text-dark
+		px-6 py-3
+		uppercase
+		text-xs
+		border-gray
+		cursor-pointer
+		flex
+		items-center
+
+		transition
+		transition-colors
+		duration-300
+		transform
+
+		hover:text-primary
+
+		
+		md:py-5
+		lg:border-r
+		2xl:py-6
+		2xl:text-sm
+	}
+
+	.header-nav {
+		@apply
+		hidden
+		py-4
+		items-center
+
+		lg:flex
+		2xl:py-6
+	}
+
+	.header-nav-item {
+		@apply
+		border-r
+		border-gray
+		px-5
+	}
+
+	.header-link {
+		@apply
+		text-muted
+		font-raleway
+		font-normal
+		tracking-widest
+		text-xs
+		uppercase
+		
+		transition
+		transition-colors
+		duration-300
+
+		hover:text-primary
+
+		2xl:text-sm
+	}
+
+	.header-icon {
+		@apply
+		px-6
+		border-l
+		border-gray
+		text-muted
+
+		transition
+		transition-colors
+		duration-300
+
+		hover:text-primary
+	}
+}

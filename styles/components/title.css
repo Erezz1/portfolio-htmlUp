@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.title-container {
+		@apply
+		flex
+		flex-col
+		items-center
+		py-14 px-5
+		border-b
+		border-gray
+		w-full
+
+		lg:border-0
+		xl:border-b
+		xl:w-1/4
+		xl:items-start
+		xl:px-0
+		xl:float-left
+	}
+
+	.title-img {
+		@apply
+		rounded-full
+		w-20
+	}
+
+	.title {
+		@apply
+		text-xl
+		my-5
+		uppercase
+		font-raleway
+		font-bold
+		text-dark
+		tracking-widest
+		text-center
+
+		md:text-3xl
+		xl:text-left
+	}
+
+	.title-subtitle {
+		@apply
+		text-xs
+		uppercase
+		font-raleway
+		text-dark
+		tracking-widest
+		text-center
+		leading-7
+
+		lg:text-left
+		lg:leading-9
+		xl:text-sm
+	}
+}
