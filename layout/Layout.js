@@ -19,9 +19,7 @@ const Layout = ({ children }) => {
 			<div className="absolute w-full">
 				<Header />
 
-				<div className="bg-background container">
-					{/* <Aside />
-					<Navbar /> */}
+				<div className="mx-auto container">
 					{
 						children
 					}

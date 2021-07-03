@@ -1,5 +1,9 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './layout/**/*.{js,ts,jsx,tsx}'
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     colors: {
@@ -34,10 +38,6 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
-    },
-    container: {
-      center: true,
-      container: []
     },
   },
   variants: {
