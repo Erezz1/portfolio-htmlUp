@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
 
 			<div className="absolute w-full">
 				<Header />
-			
+
 				<div className="bg-background container">
 					{/* <Aside />
 					<Navbar /> */}

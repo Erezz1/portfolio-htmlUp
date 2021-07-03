@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.about-section {
+		@apply
+		w-auto
+		mx-5
+		py-10
+		border-t
+		border-gray
+
+		md:mx-0
+		xl:w-1/4
+		xl:float-left
+	}
+
+	.about-title {
+		@apply
+		text-sm
+		font-raleway
+		uppercase
+		font-bold
+		tracking-widest
+		text-dark
+		mb-5
+
+		2xl:text-base
+	}
+
+	.about-description {
+		@apply
+		tracking-wide
+		font-raleway
+		text-dark
+		text-sm
+		leading-7
+		mb-5
+
+		2xl:text-base
+	}
+
+	.about-button {
+		@apply
+		block
+		text-center
+		border-2
+		border-gray
+		text-dark
+		font-bold
+		tracking-wider
+		uppercase
+		text-xs
+		py-3
+		w-full
+		transition-colors
+		duration-300
+
+		hover:text-primary
+		hover:border-primary
+
+		sm:w-auto
+		sm:px-5
+		2xl:text-sm
+		2xl:px-7
+	}
+}

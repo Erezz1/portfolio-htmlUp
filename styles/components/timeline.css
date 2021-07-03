@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.timeline {
+		@apply
+		py-5
+		mx-5
+		border-t-2
+		border-gray
+		w-auto
+
+		md:mx-0
+		xl:float-left
+		xl:w-1/4
+		xl:py-10
+	}
+
+	.timeline-card {
+		@apply
+		flex
+		items-start
+		py-5
+		border-b
+		border-gray
+	}
+
+	.timeline-card-image {
+		@apply
+		w-16
+		cursor-pointer
+
+		2xl:w-20
+	}
+
+	.timeline-card-body {
+		@apply
+		ml-5
+		flex
+		flex-col
+		justify-between
+		h-full
+	}
+
+	.timeline-title {
+		@apply
+		text-xs
+		font-raleway
+		uppercase
+		font-semibold
+		tracking-widest
+		text-dark
+		cursor-pointer
+		mb-2
+		transition-colors
+		duration-300
+
+		hover:text-primary
+
+		2xl:text-sm
+	}
+
+	.timeline-date {
+		@apply
+		uppercase
+		font-raleway
+		text-xs
+		text-muted
+		tracking-wider
+
+		2xl:text-sm
+	}
+}

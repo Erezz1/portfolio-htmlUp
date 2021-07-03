@@ -9,6 +9,7 @@ module.exports = {
       white: '#FFFFFF',
       gray: '#E2E2E2',
       background: '#F4F4F4',
+      icons: '#AAAAAA',
       // ...
     },
     extend: {},
@@ -20,6 +21,7 @@ module.exports = {
     letterSpacing: {
       widest: '.3em',
       wider: '.15em',
+      wide: '.1em',
     },
     fontSize: {
       'xs': '.7rem',

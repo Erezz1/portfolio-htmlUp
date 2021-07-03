@@ -4,6 +4,9 @@ import Layout from 'layout/Layout';
 import Title from 'components/Title';
 import Posts from 'components/Posts';
 import Projects from 'components/Projects';
+import Timeline from 'components/Timeline';
+import About from 'components/About';
+import Social from 'components/Social';
 
 const Home = () => {
 	return (
@@ -11,6 +14,9 @@ const Home = () => {
 			<Title />
 			<Posts />
 			<Projects />
+			<Timeline />
+			<About />
+			<Social />
 		</Layout>
 	);
 }

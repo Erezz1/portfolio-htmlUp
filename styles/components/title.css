@@ -21,12 +21,6 @@
 		xl:float-left
 	}
 
-	.title-img {
-		@apply
-		rounded-full
-		w-20
-	}
-
 	.title {
 		@apply
 		text-xl
