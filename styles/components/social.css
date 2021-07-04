@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.social {
+		@apply
+		mx-5
+		py-10
+		border-t
+		border-gray
+
+		md:mx-0
+		xl:w-1/4
+		xl:float-left
+	}
+
+	.social-container {
+		@apply
+		flex
+		text-icons
+		text-xl
+		mb-8
+
+		2xl:text-2xl
+	}
+
+	.social-logo {
+		@apply
+		mr-3
+		transition-colors
+		duration-300
+		cursor-pointer
+
+		hover:text-primary
+
+		xl:mr-5
+	}
+
+	.social-copy {
+		@apply
+		text-xs
+		tracking-wider
+		font-raleway
+		text-muted
+		uppercase
+	}
+
+	.social-link {
+		@apply
+		cursor-pointer 
+		transition-colors 
+		duration-300 
+
+		hover:text-primary
+	}
+}
