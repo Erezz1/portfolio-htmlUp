@@ -1,8 +1,17 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { BiSearchAlt } from 'react-icons/bi';
 
+import { setShowAside } from 'ducks/actions/ui';
+
 const Header = () => {
+
+	const dispatch = useDispatch();
+
+	const setHiddenAside = () => {
+		dispatch(setShowAside(true));
+	}
 
 	return (
 		<header className="header">
@@ -33,7 +42,10 @@ const Header = () => {
 				<button className="header-icon hidden md:block">
 					<BiSearchAlt style={{fontSize: '1.5rem'}} />
 				</button>
-				<button className="header-icon">
+				<button
+					className="header-icon"
+					onClick={ setHiddenAside }
+				>
 					<AiOutlineMenu style={{fontSize: '1.5rem'}} />
 				</button>
 			</div>

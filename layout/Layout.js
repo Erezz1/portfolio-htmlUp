@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
+import { useSelector } from 'react-redux';
 
-import Header from 'layout/Header';
-import Aside from 'layout/Aside';
-import Navbar from 'layout/Navbar';
+import Header from './Header';
+import Aside from './Aside';
 
 const Layout = ({ children }) => {
+
+	const { ui } = useSelector(state => state);
+	const { showAside } = ui;
 
 	return (
 		<>
@@ -16,13 +19,14 @@ const Layout = ({ children }) => {
 				<title>Hola</title>
 			</Head>
 
-			<div className="absolute w-full">
+			<div className="absolute w-full bg-background">
 				<Header />
+				{
+					showAside && <Aside />
+				}
 
 				<div className="mx-auto container">
-					{
-						children
-					}
+					{ children }
 				</div>
 			</div>
 		</>

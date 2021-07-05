@@ -1,11 +1,9 @@
 @import url(layout/header.css);
+@import url(layout/aside.css);
+
 @import url(components/title.css);
 @import url(components/posts.css);
 @import url(components/projects.css);
 @import url(components/timeline.css);
 @import url(components/about.css);
 @import url(components/social.css);
-
-body {
-	background-color: #F4F4F4;
-}

@@ -16,7 +16,10 @@ module.exports = {
       icons: '#AAAAAA',
       // ...
     },
-    extend: {},
+    extend: {
+      backgroundColor: ['group-focus'],
+      borderColor: ['group-focus'],
+    },
     fontFamily: {
       'display': ['Raleway', 'Helvetica', 'sans-serif'],
       'body': ['Raleway', 'Helvetica', 'sans-serif'],
