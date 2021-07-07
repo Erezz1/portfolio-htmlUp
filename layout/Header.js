@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { BiSearchAlt } from 'react-icons/bi';
 
-import { setShowAside, setDarkMode } from 'ducks/actions/ui';
+import { setShowAside } from 'ducks/actions/ui';
 
 const Header = () => {
 
@@ -14,7 +14,8 @@ const Header = () => {
 	}
 
 	const handleSetDarkMode = () => {
-		setDarkMode();
+		const html = document.querySelector('html');
+		html.classList.toggle('dark');
 	}
 
 	return (
