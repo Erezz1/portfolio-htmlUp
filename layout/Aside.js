@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { BiSearchAlt2 } from 'react-icons/bi';
 
@@ -8,6 +8,7 @@ import { setShowAside } from 'ducks/actions/ui';
 const Aside = () => {
 
 	const dispatch = useDispatch();
+	const { showAside } = useSelector(state => state.ui);
 
 	const handleHiddenAside = () => {
 		dispatch(setShowAside(false));
@@ -15,8 +16,11 @@ const Aside = () => {
 
 	return (
 		<>
-			<div className="background-aside" onClick={ handleHiddenAside }></div>
-			<aside className="aside">
+			<div
+				className={`background-aside animate__animated animate__faster ${showAside ? 'animate__fadeIn block' : 'animate__fadeOut hidden'}`}
+				onClick={handleHiddenAside}
+			></div>
+			<aside className={`aside animate__animated animate__faster ${ showAside ? 'animate__fadeInRight' : 'animate__fadeOutRight'}`}>
 				<form className="aside-header">
 					<div className="aside-header-container">
 						<label className="aside-search" htmlFor="search">

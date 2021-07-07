@@ -14,6 +14,7 @@ module.exports = {
       gray: '#E2E2E2',
       background: '#F4F4F4',
       icons: '#AAAAAA',
+      backgroundAside: '#F4F4F499',
       // ...
     },
     extend: {

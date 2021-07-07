@@ -4,6 +4,7 @@ import {
 
 const initialState = {
 	showAside: false,
+	showSearch: false,
 }
 
 export const uiReducer = (state = initialState, action) => {
@@ -13,6 +14,12 @@ export const uiReducer = (state = initialState, action) => {
 			return {
 				...state,
 				showAside: action.payload
+			}
+
+		case SET_ASIDE_SHOW:
+			return {
+				...state,
+				showSearch: action.payload
 			}
 
 		default:

@@ -14,16 +14,20 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<Head>
-				<link rel="preconnect" href="https://fonts.gstatic.com" />
-				<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet" />
+				<link 
+					rel="preconnect" 
+					href="https://fonts.gstatic.com"
+				/>
+				<link
+					href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
+					rel="stylesheet"
+				/>
 				<title>Hola</title>
 			</Head>
 
 			<div className="absolute w-full bg-background">
 				<Header />
-				{
-					showAside && <Aside />
-				}
+				<Aside />
 
 				<div className="mx-auto container">
 					{ children }

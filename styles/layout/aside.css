@@ -7,11 +7,10 @@
 		@apply
 		w-screen
 		h-screen
-		bg-gray
+		bg-backgroundAside
 		fixed
 		top-0
 		z-10
-		opacity-80
 		cursor-pointer
 	}
 
