@@ -1,15 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import { useSelector } from 'react-redux';
 
 import Header from './Header';
 import Aside from './Aside';
 
 const Layout = ({ children }) => {
-
-	const { ui } = useSelector(state => state);
-	const { showAside } = ui;
 
 	return (
 		<>
@@ -25,7 +21,7 @@ const Layout = ({ children }) => {
 				<title>Hola</title>
 			</Head>
 
-			<div className="absolute w-full bg-background">
+			<div className="absolute w-full bg-background dark:bg-backgroundD">
 				<Header />
 				<Aside />
 

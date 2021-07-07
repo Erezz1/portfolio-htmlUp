@@ -5,7 +5,7 @@ import TimeCard from 'components/timeline/TimeCard';
 
 const Timeline = () => {
 	return (
-		<section className="timeline">
+		<section className="timeline dark:border-borderD">
 			<TimeCard />
 			<TimeCard />
 			<TimeCard />

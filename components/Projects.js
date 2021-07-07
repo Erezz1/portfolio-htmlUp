@@ -5,7 +5,7 @@ import Project from 'components/projects/Project';
 
 const Projects = () => {
 	return (
-		<section className="projects-container">
+		<section className="projects-container dark:border-borderD">
 			<Project />
 			<Project />
 			<Project />

@@ -11,8 +11,8 @@ const Posts = () => {
 			<Post />
 
 			<div className="post-buttons">
-				<button className="post-button" disabled>previus page</button>
-				<button className="post-button md:ml-5">next page</button>
+				<button className="post-button dark:text-white" disabled>previus page</button>
+				<button className="post-button md:ml-5 dark:text-white">next page</button>
 			</div>
 		</section>
 	)

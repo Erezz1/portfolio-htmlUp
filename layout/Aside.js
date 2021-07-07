@@ -17,11 +17,11 @@ const Aside = () => {
 	return (
 		<>
 			<div
-				className={`background-aside animate__animated animate__faster ${showAside ? 'animate__fadeIn block' : 'animate__fadeOut hidden'}`}
+				className={`background-aside dark:bg-backgroundAsideD animate__animated animate__faster ${showAside ? 'animate__fadeIn block' : 'animate__fadeOut hidden'}`}
 				onClick={handleHiddenAside}
 			></div>
-			<aside className={`aside animate__animated animate__faster ${ showAside ? 'animate__fadeInRight' : 'animate__fadeOutRight'}`}>
-				<form className="aside-header">
+			<aside className={`aside dark:bg-black dark:border-borderD animate__animated animate__faster ${ showAside ? 'animate__fadeInRight' : 'animate__fadeOutRight'}`}>
+				<form className="aside-header dark:border-borderD">
 					<div className="aside-header-container">
 						<label className="aside-search" htmlFor="search">
 							<BiSearchAlt2 />
@@ -29,34 +29,34 @@ const Aside = () => {
 						<input className="aside-input" placeholder="Search" type="text" name="" id="search" />
 					</div>
 				</form>
-				<nav className="aside-navigation">
-					<div className="aside-navigation-container">
+				<nav className="aside-navigation dark:border-borderD">
+					<div className="aside-navigation-container dark:border-borderD">
 						<div className="aside-link">
-							<h3 className="aside-link-title">Lorem ipsum</h3>
-							<p className="aside-link-subtitle">feugiat tempus veroeros dolor</p>
+							<h3 className="aside-link-title dark:text-white">Lorem ipsum</h3>
+							<p className="aside-link-subtitle dark:text-gray">feugiat tempus veroeros dolor</p>
 						</div>
 					</div>
-					<div className="aside-navigation-container py-6">
+					<div className="aside-navigation-container dark:border-borderD py-6">
 						<div className="aside-link">
-							<h3 className="aside-link-title">Lorem ipsum</h3>
-							<p className="aside-link-subtitle">feugiat tempus veroeros dolor</p>
+							<h3 className="aside-link-title dark:text-white">Lorem ipsum</h3>
+							<p className="aside-link-subtitle dark:text-gray">feugiat tempus veroeros dolor</p>
 						</div>
 					</div>
-					<div className="aside-navigation-container py-6">
+					<div className="aside-navigation-container dark:border-borderD py-6">
 						<div className="aside-link">
-							<h3 className="aside-link-title">Lorem ipsum</h3>
-							<p className="aside-link-subtitle">feugiat tempus veroeros dolor</p>
+							<h3 className="aside-link-title dark:text-white">Lorem ipsum</h3>
+							<p className="aside-link-subtitle dark:text-gray">feugiat tempus veroeros dolor</p>
 						</div>
 					</div>
-					<div className="aside-navigation-container pt-6 pb-0 border-0">	
+					<div className="aside-navigation-container dark:border-borderD pt-6 pb-0 border-0">	
 						<div className="aside-link">
-							<h3 className="aside-link-title">Lorem ipsum</h3>
-							<p className="aside-link-subtitle">feugiat tempus veroeros dolor</p>
+							<h3 className="aside-link-title dark:text-white">Lorem ipsum</h3>
+							<p className="aside-link-subtitle dark:text-gray">feugiat tempus veroeros dolor</p>
 						</div>
 					</div>
 				</nav>
 				<div className="aside-button-container">
-					<button className="aside-button">log in</button>
+					<button className="aside-button dark:text-white">log in</button>
 				</div>
 			</aside>
 		</>

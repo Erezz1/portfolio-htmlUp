@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Project = () => {
 	return (
-		<article className="project">
+		<article className="project dark:border-borderD dark:bg-black">
 			<img
 				className="project-image"
 				src="https://via.placeholder.com/400x200"
@@ -11,8 +11,8 @@ const Project = () => {
 			/>
 			<div className="project-body">
 				<div>
-					<p className="project-title">vitae sed condimentum</p>
-					<p className="project-date">october 20, 2015</p>
+					<p className="project-title dark:text-white">vitae sed condimentum</p>
+					<p className="project-date dark:text-gray">october 20, 2015</p>
 				</div>
 				<img
 					className="project-author"

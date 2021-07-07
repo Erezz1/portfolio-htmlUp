@@ -15,7 +15,12 @@ module.exports = {
       background: '#F4F4F4',
       icons: '#AAAAAA',
       backgroundAside: '#F4F4F499',
-      // ...
+
+      // Dark mode
+      backgroundD: '#18191A',
+      black: '#242526',
+      borderD: '#3A3B3C',
+      backgroundAsideD: '#11111190',
     },
     extend: {
       backgroundColor: ['group-focus'],
