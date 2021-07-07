@@ -10,7 +10,7 @@ import {
 
 const Social = () => {
 	return (
-		<section className="social dark:border-borderD">
+		<section className="social">
 			<div className="social-container">
 				<AiOutlineTwitter className="social-logo" />
 				<AiFillFacebook className="social-logo" />
@@ -19,7 +19,7 @@ const Social = () => {
 				<AiOutlineGithub className="social-logo" />
 			</div>
 
-			<p className="social-copy dark:text-white">&copy; diseño por <a className="social-link" target="_blank" href="https://html5up.net/">html5up</a></p>
+			<p className="social-copy">&copy; diseño por <a className="social-link" target="_blank" href="https://html5up.net/">html5up</a></p>
 		</section>
 	)
 }

@@ -19,36 +19,36 @@ const Header = () => {
 	}
 
 	return (
-		<header className="header dark:bg-black dark:border-borderD">
+		<header className="header">
 			<div className="flex justify-start">
-				<h2 className="header-logo dark:text-white dark:border-borderD">Future Imperfect</h2>
+				<h2 className="header-logo">Future Imperfect</h2>
 				<nav>
 					<ul className="header-nav">
-						<li className="header-nav-item dark:border-borderD">
-							<a className="header-link dark:text-gray" href="#">lorem</a>
+						<li className="header-nav-item">
+							<a className="header-link" href="#">lorem</a>
 						</li>
-						<li className="header-nav-item dark:border-borderD">
-							<a className="header-link dark:text-gray" href="#">ipsum</a>
+						<li className="header-nav-item">
+							<a className="header-link" href="#">ipsum</a>
 						</li>
-						<li className="header-nav-item dark:border-borderD">
-							<a className="header-link dark:text-gray" href="#">feugiat</a>
+						<li className="header-nav-item">
+							<a className="header-link" href="#">feugiat</a>
 						</li>
-						<li className="header-nav-item dark:border-borderD">
-							<a className="header-link dark:text-gray" href="#">tempus</a>
+						<li className="header-nav-item">
+							<a className="header-link" href="#">tempus</a>
 						</li>
-						<li className="header-nav-item dark:border-borderD">
-							<a className="header-link dark:text-gray" href="#">adipiscing</a>
+						<li className="header-nav-item">
+							<a className="header-link" href="#">adipiscing</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 
 			<div className="flex">
-				<button onClick={ handleSetDarkMode } className="header-icon hidden md:block dark:border-borderD dark:text-gray">
+				<button onClick={ handleSetDarkMode } className="header-icon hidden md:block">
 					<BiSearchAlt style={{fontSize: '1.5rem'}} />
 				</button>
 				<button
-					className="header-icon dark:border-borderD dark:text-gray"
+					className="header-icon"
 					onClick={ setHiddenAside }
 				>
 					<AiOutlineMenu style={{fontSize: '1.5rem'}} />

@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
 				<title>Hola</title>
 			</Head>
 
-			<div className="absolute w-full bg-background dark:bg-backgroundD">
+			<div className="wrapper">
 				<Header />
 				<Aside />
 

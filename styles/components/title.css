@@ -10,8 +10,12 @@
 		items-center
 		py-14 px-5
 		border-b
-		border-gray
 		w-full
+		transition-colors
+		duration-300
+		border-gray
+
+		dark:border-borderD
 
 		lg:border-0
 		xl:border-b
@@ -28,9 +32,13 @@
 		uppercase
 		font-raleway
 		font-bold
-		text-dark
 		tracking-widest
 		text-center
+		transition-colors
+		duration-300
+		text-dark
+
+		dark:text-white
 
 		md:text-3xl
 		xl:text-left
@@ -41,10 +49,14 @@
 		text-xs
 		uppercase
 		font-raleway
-		text-dark
 		tracking-widest
 		text-center
 		leading-7
+		transition-colors
+		duration-300
+		text-dark
+
+		dark:text-gray
 
 		lg:text-left
 		lg:leading-9

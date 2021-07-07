@@ -8,8 +8,12 @@
 		py-5
 		mx-5
 		border-t-2
-		border-gray
 		w-auto
+		transition-colors
+		duration-300
+		border-gray
+
+		dark:border-borderD
 
 		md:mx-0
 		xl:float-left
@@ -23,7 +27,11 @@
 		items-start
 		py-5
 		border-b
+		transition-colors
+		duration-300
 		border-gray
+
+		dark:border-borderD
 	}
 
 	.timeline-card-image {
@@ -50,11 +58,14 @@
 		uppercase
 		font-semibold
 		tracking-widest
-		text-dark
 		cursor-pointer
 		mb-2
 		transition-colors
 		duration-300
+		text-dark
+
+		dark:text-white
+		dark:hover:text-primary
 
 		hover:text-primary
 
@@ -66,8 +77,12 @@
 		uppercase
 		font-raleway
 		text-xs
-		text-muted
 		tracking-wider
+		transition-colors
+		duration-300
+		text-muted
+
+		dark:text-gray
 
 		2xl:text-sm
 	}

@@ -1,5 +1,6 @@
 @import url(layout/header.css);
 @import url(layout/aside.css);
+@import url(layout/layout.css);
 
 @import url(components/title.css);
 @import url(components/posts.css);

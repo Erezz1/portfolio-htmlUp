@@ -30,11 +30,16 @@
 
 	.post {
 		@apply
-		bg-white 
 		w-full 
-		border-gray
 		border
 		mb-10 
+		transition-colors
+		duration-300
+		bg-white 
+		border-gray
+
+		dark:bg-black 
+		dark:border-borderD
 
 		xl:mb-14
 	}
@@ -55,7 +60,11 @@
 
 	.post-head {
 		@apply
+		transition-colors
+		duration-300
 		border-gray 
+
+		dark:border-borderD
 
 		lg:w-3/4 
 		lg:px-4 
@@ -70,12 +79,15 @@
 		uppercase
 		font-raleway
 		font-bold
-		text-dark
 		tracking-widest
 		text-center
 		cursor-pointer
 		transition-colors
 		duration-300
+		text-dark
+
+		dark:text-white
+		dark:hover:text-primary
 
 		hover:text-primary
 
@@ -90,10 +102,14 @@
 		uppercase
 		font-raleway
 		font-light
-		text-dark
 		tracking-widest
 		text-center
 		leading-6
+		transition-colors
+		duration-300
+		text-dark
+
+		dark:text-gray
 
 		lg:text-left
 	}
@@ -122,15 +138,20 @@
 		uppercase
 		font-raleway
 		font-bold
-		text-dark
 		tracking-widest
 		text-center
 		mb-3
+		transition-colors
+		duration-300
+		border-gray
+		text-dark
+
+		dark:text-gray
+		dark:border-borderD
 
 		md:mb-0
 		md:px-3
 		md:border-r
-		md:border-gray
 		lg:px-0
 		lg:border-none
 	}
@@ -160,12 +181,15 @@
 		uppercase
 		font-raleway
 		font-light
-		text-dark
 		tracking-widest
 		text-center
 		cursor-pointer
 		transition-colors
 		duration-300
+		text-dark
+
+		dark:text-gray
+		dark:hover:text-primary
 
 		hover:text-primary
 
@@ -178,7 +202,11 @@
 		px-0
 		pt-0
 		border-t
+		transition-colors
+		duration-300
 		border-gray
+
+		dark:border-borderD
 
 		md:px-10
 		md:pt-10
@@ -194,10 +222,14 @@
 
 	.post-text {
 		@apply
-		text-dark
 		font-raleway
 		text-base
 		leading-6
+		transition-colors
+		duration-300
+		text-dark
+
+		dark:text-gray
 	}
 
 	.post-footer {
@@ -218,7 +250,6 @@
 		mb-5 
 		mt-8
 		text-xs
-		text-muted
 	}
 
 	.post-reaction-general {
@@ -230,6 +261,11 @@
 		cursor-pointer
 		transition-colors
 		duration-300
+		text-muted
+
+		dark:text-white 
+		dark:border-borderD
+		dark:hover:text-primary
 
 		hover:text-primary
 	}
@@ -240,10 +276,15 @@
 		items-center 
 		px-3 
 		border-l 
-		border-gray
 		cursor-pointer
 		transition-colors
 		duration-300
+		border-gray
+		text-muted
+
+		dark:text-white 
+		dark:border-borderD
+		dark:hover:text-primary
 
 		hover:text-primary
 	}
@@ -265,6 +306,9 @@
 		cursor-pointer
 		transition-colors
 		duration-300
+
+		dark:text-white
+		dark:hover:text-primary
 
 		hover:text-primary
 		hover:border-primary

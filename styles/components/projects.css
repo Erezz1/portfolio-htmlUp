@@ -9,7 +9,11 @@
 		pt-10
 		pb-3
 		border-t
+		transition-colors
+		duration-300
 		border-gray
+
+		dark:border-borderD
 
 		md:grid
 		md:grid-cols-12
@@ -25,11 +29,16 @@
 
 	.project {
 		@apply
-		bg-white
 		w-full
 		mb-7
 		border
+		transition-colors
+		duration-300
+		bg-white
 		border-gray
+
+		dark:border-borderD 
+		dark:bg-black
 
 		md:col-span-6
 		md:mb-3
@@ -58,11 +67,14 @@
 		font-raleway
 		text-xs
 		tracking-widest
-		text-dark
 		leading-7
 		cursor-pointer
 		transition-colors
 		duration-300
+		text-dark
+
+		dark:text-white
+		dark:hover:text-primary
 
 		hover:text-primary
 
@@ -76,7 +88,11 @@
 		font-raleway
 		text-xs
 		tracking-widest
+		transition-colors
+		duration-300
 		text-muted
+
+		dark:text-gray
 	}
 
 	.project-author {

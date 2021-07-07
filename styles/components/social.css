@@ -8,7 +8,11 @@
 		mx-5
 		py-10
 		border-t
+		transition-colors
+		duration-300
 		border-gray
+
+		dark:border-borderD
 
 		md:mx-0
 		xl:w-1/4
@@ -42,8 +46,12 @@
 		text-xs
 		tracking-wider
 		font-raleway
-		text-muted
 		uppercase
+		transition-colors
+		duration-300
+		text-muted
+
+		dark:text-white
 	}
 
 	.social-link {

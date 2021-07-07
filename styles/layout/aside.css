@@ -7,11 +7,15 @@
 		@apply
 		w-screen
 		h-screen
-		bg-backgroundAside
 		fixed
 		top-0
 		z-10
 		cursor-pointer
+		transition-colors
+		duration-300
+		bg-backgroundAside
+
+		dark:bg-backgroundAsideD
 	}
 
 	.aside {
@@ -20,12 +24,17 @@
 		fixed
 		right-0
 		top-0
-		bg-white
 		opacity-100
 		z-20
 		border-l
-		border-gray
 		w-10/12
+		transition-colors
+		duration-300
+		bg-white
+		border-gray
+
+		dark:bg-black 
+		dark:border-borderD
 
 		sm:w-auto
 	}
@@ -33,12 +42,16 @@
 	.aside-header {
 		@apply
 		border-b
-		border-gray
 		mt-6
 		px-6
 		pb-6
 		h-auto
 		items-center
+		transition-colors
+		duration-300
+		border-gray
+
+		dark:border-borderD
 
 		md:mt-12
 		md:px-12
@@ -53,8 +66,10 @@
 		@apply
 		border
 		flex
-		border-gray
 		group
+		border-gray
+
+		dark:group-hover:border-primary
 		group-hover:border-primary
 	}
 
@@ -82,7 +97,11 @@
 		@apply
 		p-6
 		border-b
+		transition-colors
+		duration-300
 		border-gray
+
+		dark:border-borderD
 
 		md:p-12
 		2xl:p-14
@@ -92,18 +111,25 @@
 		@apply
 		pb-6
 		border-b
+		transition-colors
+		duration-300
 		border-gray
+
+		dark:border-borderD
 	}
 
 	.aside-link {
 		@apply
 		font-raleway
 		text-xs
-		text-dark
 		uppercase
 		cursor-pointer
 		transition-colors
 		duration-300
+		text-dark
+
+		dark:text-white
+		dark:hover:text-primary
 
 		hover:text-primary
 
@@ -115,12 +141,16 @@
 		font-bold
 		tracking-widest
 		pb-3
+		transition-colors
+		duration-300
 	}
 
 	.aside-link-subtitle {
 		@apply
 		font-light
 		tracking-wide
+		transition-colors
+		duration-300
 	}
 
 	.aside-button-container {
@@ -135,16 +165,19 @@
 		@apply
 		w-full
 		border
-		border-gray
 		py-4
 		uppercase
 		font-raleway
 		text-xs
 		font-bold
 		tracking-wider
-		text-dark
 		transition-colors
 		duration-300
+		text-dark
+		border-gray
+
+		dark:text-white
+		dark:hover:text-primary
 
 		hover:border-primary
 		hover:text-primary

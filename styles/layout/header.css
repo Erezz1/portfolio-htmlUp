@@ -7,13 +7,18 @@
 		@apply
 		w-full
 		border-b
-		border-gray
 		flex
 		justify-between
 		sticky
 		top-0
-		bg-white
 		z-10
+		transition-colors
+		duration-300
+		bg-white
+		border-gray
+
+		dark:bg-black 
+		dark:border-borderD
 	}
 
 	.header-logo {
@@ -25,19 +30,21 @@
 		px-6 py-3
 		uppercase
 		text-xs
-		border-gray
 		cursor-pointer
 		flex
 		items-center
+		border-gray
 
-		transition
+		dark:text-white 
+		dark:border-borderD
+		dark:hover:text-primary
+
 		transition-colors
 		duration-300
 		transform
 
 		hover:text-primary
 
-		
 		md:py-5
 		lg:border-r
 		2xl:py-6
@@ -57,20 +64,26 @@
 	.header-nav-item {
 		@apply
 		border-r
-		border-gray
 		px-5
+		transition-colors
+		duration-300
+		border-gray
+
+		dark:border-borderD
 	}
 
 	.header-link {
 		@apply
-		text-muted
 		font-raleway
 		font-normal
 		tracking-widest
 		text-xs
 		uppercase
-		
-		transition
+		text-muted
+
+		dark:text-gray
+		dark:hover:text-primary
+
 		transition-colors
 		duration-300
 
@@ -86,7 +99,10 @@
 		border-gray
 		text-muted
 
-		transition
+		dark:border-borderD 
+		dark:text-gray
+		dark:hover:text-primary
+
 		transition-colors
 		duration-300
 

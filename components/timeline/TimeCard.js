@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 
 const TimeCard =() => {
 	return (
-		<article className="timeline-card dark:border-borderD">
+		<article className="timeline-card">
 			<img
 				className="timeline-card-image"
-				src="https://via.placeholder.com/150"
+				src="/assets/images/pic11.jpg"
 				alt=""
 			/>
 			<div className="timeline-card-body">
-				<h4 className="timeline-title dark:text-background">Lorem ipsum dolor sit amet consectetur.</h4>
+				<h4 className="timeline-title">Lorem ipsum dolor sit amet consectetur.</h4>
 
-				<p className="timeline-date dark:text-gray">october 20, 2015</p>
+				<p className="timeline-date">october 20, 2015</p>
 			</div>
 		</article>
 	)

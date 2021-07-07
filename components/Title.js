@@ -4,16 +4,16 @@ import PropTypes from 'prop-types';
 const Title = () => {
 	return (
 		<>
-			<div className="title-container dark:border-borderD">
+			<div className="title-container">
 				<a className="relative" href="">
 					<img
 						className="w-20 rounded-full"
-						src="https://via.placeholder.com/150"
+						src="/assets/images/avatar.jpg"
 						alt=""
 					/>
 				</a>
-				<h1 className="title dark:text-white">Future Imperfect</h1>
-				<h3 className="title-subtitle dark:text-gray">Another fine responsive site template by html5 up</h3>
+				<h1 className="title">Future Imperfect</h1>
+				<h3 className="title-subtitle">Another fine responsive site template by html5 up</h3>
 			</div>
 		</>
 	);
